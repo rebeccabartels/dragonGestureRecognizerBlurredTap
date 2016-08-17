@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     
     
+    @IBOutlet weak var textField: UITextView!
     
     let tapRecGreenDragon = UITapGestureRecognizer()
     let tapRecBlackDragon = UITapGestureRecognizer()
@@ -21,6 +22,8 @@ class ViewController: UIViewController {
     let tapRecWhiteDragon = UITapGestureRecognizer()
     
     let returnTapRec = UITapGestureRecognizer()
+    
+    var isBlurred: Bool = false
     
     
     @IBOutlet weak var blackdragon: UIImageView!
@@ -32,6 +35,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        textField.hidden = true
         
         
         greendragon.image = UIImage.init(named: "greendragon")
@@ -73,41 +78,45 @@ class ViewController: UIViewController {
         
         
         if !UIAccessibilityIsReduceTransparencyEnabled() {
-            self.view.backgroundColor = UIColor.clearColor()
-            
+            print("hi")
             let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
             let blurEffectView = UIVisualEffectView(effect: blurEffect)
-            
-            blurEffectView.frame = self.view.bounds
-            blurEffectView.autoresizingMask = .FlexibleWidth
-            blurEffectView.autoresizingMask = .FlexibleHeight
-            
-            self.view.addSubview(blurEffectView)
+
             
             
-        } else {
             
-            self.view.backgroundColor = UIColor.blackColor()
+            if isBlurred == false {
+                print("bye")
+           
+                
+                blurEffectView.frame = self.view.bounds
+                blurEffectView.autoresizingMask = .FlexibleWidth
+                blurEffectView.autoresizingMask = .FlexibleHeight
+                self.view.addSubview(blurEffectView)
+                textField.hidden = false
+                view.bringSubviewToFront(textField)
+                
+                isBlurred = true
+                
+            } else if isBlurred == true {
+                print("bonjour")
+                blurEffectView.removeFromSuperview()
+                
+                
+                isBlurred = false
+            }
+            
+
+            
+            
         }
         
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
         
-        blurEffectView.frame = greendragon.frame
-        self.greendragon.addSubview(blurEffectView)
-        blurEffectView.frame = momandbabydragon.frame
-        self.momandbabydragon.addSubview(blurEffectView)
-        blurEffectView.frame = pensivedragon.frame
-        self.pensivedragon.addSubview(blurEffectView)
-        blurEffectView.frame = blackdragon.frame
-        self.whitedragon.addSubview(blurEffectView)
-        blurEffectView.frame = whitedragon.frame
-        self.blackdragon.addSubview(blurEffectView)
-        blurEffectView.frame = yellowdragon.frame
-        self.yellowdragon.addSubview(blurEffectView)
         
     }
     
+
+        
     
-    
+
 }

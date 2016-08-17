@@ -20,6 +20,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WKv-Fq-Pb2">
                                 <rect key="frame" x="20" y="216" width="178" height="142"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bvg-Sz-upl">
+                                <rect key="frame" x="20" y="405" width="178" height="146"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUF-RP-jck">
                                 <rect key="frame" x="223" y="216" width="171" height="142"/>
                             </imageView>
@@ -32,9 +35,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbh-4E-tq8">
                                 <rect key="frame" x="20" y="27" width="178" height="141"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bvg-Sz-upl">
-                                <rect key="frame" x="20" y="405" width="178" height="146"/>
-                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aJ3-oG-aXl">
+                                <rect key="frame" x="51" y="154" width="313" height="249"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -44,6 +51,7 @@
                         <outlet property="greendragon" destination="rUF-RP-jck" id="2j0-an-kCQ"/>
                         <outlet property="momandbabydragon" destination="WKv-Fq-Pb2" id="heI-rH-lHw"/>
                         <outlet property="pensivedragon" destination="hjU-V0-PHa" id="y3D-Im-xFf"/>
+                        <outlet property="textField" destination="aJ3-oG-aXl" id="mfh-3U-h3H"/>
                         <outlet property="whitedragon" destination="Bvg-Sz-upl" id="ktd-wy-TEI"/>
                         <outlet property="yellowdragon" destination="akY-h6-Ayv" id="f46-nN-AII"/>
                     </connections>
