@@ -9,9 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
-
+    
+    
     
     let tapRecGreenDragon = UITapGestureRecognizer()
     let tapRecBlackDragon = UITapGestureRecognizer()
@@ -29,10 +29,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var whitedragon: UIImageView!
     @IBOutlet weak var pensivedragon: UIImageView!
     @IBOutlet weak var momandbabydragon: UIImageView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
         greendragon.image = UIImage.init(named: "greendragon")
         blackdragon.image = UIImage.init(named: "blackdragon")
@@ -47,8 +47,8 @@ class ViewController: UIViewController {
         blackdragon.userInteractionEnabled = true
         pensivedragon.userInteractionEnabled = true
         momandbabydragon.userInteractionEnabled = true
-        momandbabydragon.userInteractionEnabled = true
-
+        whitedragon.userInteractionEnabled = true
+        
         
         tapRecGreenDragon.addTarget(self, action: #selector(ViewController.tappedView))
         tapRecBlackDragon.addTarget(self, action: #selector(ViewController.tappedView))
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         tapRecWhiteDragon.addTarget(self, action: #selector(ViewController.tappedView))
         tapRecPensiveDragon.addTarget(self, action: #selector(ViewController.tappedView))
         
-       
+        
         
         greendragon.addGestureRecognizer(tapRecGreenDragon)
         pensivedragon.addGestureRecognizer(tapRecPensiveDragon)
@@ -65,13 +65,13 @@ class ViewController: UIViewController {
         blackdragon.addGestureRecognizer(tapRecBlackDragon)
         momandbabydragon.addGestureRecognizer(tapRecMomAndBabyDragon)
         yellowdragon.addGestureRecognizer(tapRecYellowDragon)
-
+        
     }
-
+    
     
     func tappedView() {
         
-    
+        
         if !UIAccessibilityIsReduceTransparencyEnabled() {
             self.view.backgroundColor = UIColor.clearColor()
             
@@ -92,7 +92,7 @@ class ViewController: UIViewController {
         
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
-
+        
         blurEffectView.frame = greendragon.frame
         self.greendragon.addSubview(blurEffectView)
         blurEffectView.frame = momandbabydragon.frame
@@ -107,8 +107,7 @@ class ViewController: UIViewController {
         self.yellowdragon.addSubview(blurEffectView)
         
     }
-
-
-
+    
+    
+    
 }
-
