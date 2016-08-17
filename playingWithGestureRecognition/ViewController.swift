@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     let tapRecYellowDragon = UITapGestureRecognizer()
     let tapRecWhiteDragon = UITapGestureRecognizer()
     
+    let tapRecTextField = UITapGestureRecognizer()
+    
     let returnTapRec = UITapGestureRecognizer()
     
     var isBlurred: Bool = false
@@ -47,6 +49,8 @@ class ViewController: UIViewController {
         yellowdragon.image = UIImage.init(named: "yellowdragon")
         
         
+        
+        
         greendragon.userInteractionEnabled = true
         yellowdragon.userInteractionEnabled = true
         blackdragon.userInteractionEnabled = true
@@ -55,13 +59,14 @@ class ViewController: UIViewController {
         whitedragon.userInteractionEnabled = true
         
         
+        
         tapRecGreenDragon.addTarget(self, action: #selector(ViewController.tappedView))
         tapRecBlackDragon.addTarget(self, action: #selector(ViewController.tappedView))
         tapRecMomAndBabyDragon.addTarget(self, action: #selector(ViewController.tappedView))
         tapRecYellowDragon.addTarget(self, action: #selector(ViewController.tappedView))
         tapRecWhiteDragon.addTarget(self, action: #selector(ViewController.tappedView))
         tapRecPensiveDragon.addTarget(self, action: #selector(ViewController.tappedView))
-        
+        returnTapRec.addTarget(self, action: #selector(ViewController.tappedView))
         
         
         greendragon.addGestureRecognizer(tapRecGreenDragon)
@@ -70,7 +75,7 @@ class ViewController: UIViewController {
         blackdragon.addGestureRecognizer(tapRecBlackDragon)
         momandbabydragon.addGestureRecognizer(tapRecMomAndBabyDragon)
         yellowdragon.addGestureRecognizer(tapRecYellowDragon)
-        
+        textField.addGestureRecognizer(returnTapRec)                                       
     }
     
     
@@ -82,41 +87,36 @@ class ViewController: UIViewController {
             let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
             let blurEffectView = UIVisualEffectView(effect: blurEffect)
 
-            
-            
-            
             if isBlurred == false {
                 print("bye")
-           
                 
                 blurEffectView.frame = self.view.bounds
                 blurEffectView.autoresizingMask = .FlexibleWidth
                 blurEffectView.autoresizingMask = .FlexibleHeight
+                
                 self.view.addSubview(blurEffectView)
+                
                 textField.hidden = false
+                
                 view.bringSubviewToFront(textField)
                 
                 isBlurred = true
                 
             } else if isBlurred == true {
                 print("bonjour")
-                blurEffectView.removeFromSuperview()
-                
-                
-                isBlurred = false
-            }
-            
-
-            
-            
-        }
-        
-        
-        
-    }
-    
-
-        
-    
-
-}
+                if returnTapRec.enabled == true {
+                    print("nihao")
+                    textField.hidden = true
+                    
+                    for subview in blurEffectView.subviews {
+                        print("hola")
+                        if subview is UIVisualEffectView {
+                            subview.removeFromSuperview()
+                                        }
+                                     }
+                                 }
+                 isBlurred = false
+                            }
+                        }
+                    }
+                }
