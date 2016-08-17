@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		434D3EAD1D63E3860071D6CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434D3EAC1D63E3860071D6CD /* AppDelegate.swift */; };
+		434D3EAF1D63E3860071D6CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434D3EAE1D63E3860071D6CD /* ViewController.swift */; };
+		434D3EB21D63E3860071D6CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434D3EB01D63E3860071D6CD /* Main.storyboard */; };
+		434D3EB41D63E3860071D6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434D3EB31D63E3860071D6CD /* Assets.xcassets */; };
+		434D3EB71D63E3860071D6CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434D3EB51D63E3860071D6CD /* LaunchScreen.storyboard */; };
+		434D3EC41D63E67E0071D6CD /* greendragon in Resources */ = {isa = PBXBuildFile; fileRef = 434D3EBF1D63E67E0071D6CD /* greendragon */; };
+		434D3EC51D63E67E0071D6CD /* blackdragon in Resources */ = {isa = PBXBuildFile; fileRef = 434D3EC01D63E67E0071D6CD /* blackdragon */; };
+		434D3EC71D63E67E0071D6CD /* yellowdragon in Resources */ = {isa = PBXBuildFile; fileRef = 434D3EC21D63E67E0071D6CD /* yellowdragon */; };
+		434D3EC91D63E6B20071D6CD /* whitedragon in Resources */ = {isa = PBXBuildFile; fileRef = 434D3EC81D63E6B20071D6CD /* whitedragon */; };
+		434D3ECB1D63E6D80071D6CD /* pensivedragon in Resources */ = {isa = PBXBuildFile; fileRef = 434D3ECA1D63E6D80071D6CD /* pensivedragon */; };
+		434D3ECD1D63E70C0071D6CD /* momandbabydragon in Resources */ = {isa = PBXBuildFile; fileRef = 434D3ECC1D63E70C0071D6CD /* momandbabydragon */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		434D3EA91D63E3860071D6CD /* playingWithGestureRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playingWithGestureRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		434D3EAC1D63E3860071D6CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		434D3EAE1D63E3860071D6CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		434D3EB11D63E3860071D6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		434D3EB31D63E3860071D6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		434D3EB61D63E3860071D6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		434D3EB81D63E3860071D6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		434D3EBF1D63E67E0071D6CD /* greendragon */ = {isa = PBXFileReference; lastKnownFileType = file; path = greendragon; sourceTree = "<group>"; };
+		434D3EC01D63E67E0071D6CD /* blackdragon */ = {isa = PBXFileReference; lastKnownFileType = file; path = blackdragon; sourceTree = "<group>"; };
+		434D3EC21D63E67E0071D6CD /* yellowdragon */ = {isa = PBXFileReference; lastKnownFileType = file; path = yellowdragon; sourceTree = "<group>"; };
+		434D3EC81D63E6B20071D6CD /* whitedragon */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitedragon; sourceTree = "<group>"; };
+		434D3ECA1D63E6D80071D6CD /* pensivedragon */ = {isa = PBXFileReference; lastKnownFileType = file; path = pensivedragon; sourceTree = "<group>"; };
+		434D3ECC1D63E70C0071D6CD /* momandbabydragon */ = {isa = PBXFileReference; lastKnownFileType = file; path = momandbabydragon; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		434D3EA61D63E3860071D6CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		434D3EA01D63E3860071D6CD = {
+			isa = PBXGroup;
+			children = (
+				434D3EAB1D63E3860071D6CD /* playingWithGestureRecognition */,
+				434D3EAA1D63E3860071D6CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		434D3EAA1D63E3860071D6CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				434D3EA91D63E3860071D6CD /* playingWithGestureRecognition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		434D3EAB1D63E3860071D6CD /* playingWithGestureRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				434D3EAC1D63E3860071D6CD /* AppDelegate.swift */,
+				434D3EAE1D63E3860071D6CD /* ViewController.swift */,
+				434D3EB01D63E3860071D6CD /* Main.storyboard */,
+				434D3EB31D63E3860071D6CD /* Assets.xcassets */,
+				434D3EB51D63E3860071D6CD /* LaunchScreen.storyboard */,
+				434D3EB81D63E3860071D6CD /* Info.plist */,
+				434D3EBF1D63E67E0071D6CD /* greendragon */,
+				434D3EC01D63E67E0071D6CD /* blackdragon */,
+				434D3ECC1D63E70C0071D6CD /* momandbabydragon */,
+				434D3ECA1D63E6D80071D6CD /* pensivedragon */,
+				434D3EC81D63E6B20071D6CD /* whitedragon */,
+				434D3EC21D63E67E0071D6CD /* yellowdragon */,
+			);
+			path = playingWithGestureRecognition;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		434D3EA81D63E3860071D6CD /* playingWithGestureRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 434D3EBB1D63E3860071D6CD /* Build configuration list for PBXNativeTarget "playingWithGestureRecognition" */;
+			buildPhases = (
+				434D3EA51D63E3860071D6CD /* Sources */,
+				434D3EA61D63E3860071D6CD /* Frameworks */,
+				434D3EA71D63E3860071D6CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = playingWithGestureRecognition;
+			productName = playingWithGestureRecognition;
+			productReference = 434D3EA91D63E3860071D6CD /* playingWithGestureRecognition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		434D3EA11D63E3860071D6CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Rebecca Bartels";
+				TargetAttributes = {
+					434D3EA81D63E3860071D6CD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 434D3EA41D63E3860071D6CD /* Build configuration list for PBXProject "playingWithGestureRecognition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 434D3EA01D63E3860071D6CD;
+			productRefGroup = 434D3EAA1D63E3860071D6CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				434D3EA81D63E3860071D6CD /* playingWithGestureRecognition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		434D3EA71D63E3860071D6CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				434D3EC51D63E67E0071D6CD /* blackdragon in Resources */,
+				434D3EB71D63E3860071D6CD /* LaunchScreen.storyboard in Resources */,
+				434D3EC91D63E6B20071D6CD /* whitedragon in Resources */,
+				434D3EC41D63E67E0071D6CD /* greendragon in Resources */,
+				434D3EB41D63E3860071D6CD /* Assets.xcassets in Resources */,
+				434D3EC71D63E67E0071D6CD /* yellowdragon in Resources */,
+				434D3ECD1D63E70C0071D6CD /* momandbabydragon in Resources */,
+				434D3EB21D63E3860071D6CD /* Main.storyboard in Resources */,
+				434D3ECB1D63E6D80071D6CD /* pensivedragon in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		434D3EA51D63E3860071D6CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				434D3EAF1D63E3860071D6CD /* ViewController.swift in Sources */,
+				434D3EAD1D63E3860071D6CD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		434D3EB01D63E3860071D6CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				434D3EB11D63E3860071D6CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		434D3EB51D63E3860071D6CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				434D3EB61D63E3860071D6CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		434D3EB91D63E3860071D6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		434D3EBA1D63E3860071D6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		434D3EBC1D63E3860071D6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = playingWithGestureRecognition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rebeccaKFBartels.playingWithGestureRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		434D3EBD1D63E3860071D6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = playingWithGestureRecognition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rebeccaKFBartels.playingWithGestureRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		434D3EA41D63E3860071D6CD /* Build configuration list for PBXProject "playingWithGestureRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				434D3EB91D63E3860071D6CD /* Debug */,
+				434D3EBA1D63E3860071D6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		434D3EBB1D63E3860071D6CD /* Build configuration list for PBXNativeTarget "playingWithGestureRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				434D3EBC1D63E3860071D6CD /* Debug */,
+				434D3EBD1D63E3860071D6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 434D3EA11D63E3860071D6CD /* Project object */;
+}
