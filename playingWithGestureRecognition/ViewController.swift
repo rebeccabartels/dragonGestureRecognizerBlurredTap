@@ -75,18 +75,22 @@ class ViewController: UIViewController {
         blackdragon.addGestureRecognizer(tapRecBlackDragon)
         momandbabydragon.addGestureRecognizer(tapRecMomAndBabyDragon)
         yellowdragon.addGestureRecognizer(tapRecYellowDragon)
-        textField.addGestureRecognizer(returnTapRec)                                       
+        textField.addGestureRecognizer(returnTapRec)
+        
+        
+        
+        
     }
     
     
-    func tappedView() {
+    func tappedView(isBool: Bool) {
         
         
         if !UIAccessibilityIsReduceTransparencyEnabled() {
             print("hi")
             let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
             let blurEffectView = UIVisualEffectView(effect: blurEffect)
-
+            
             if isBlurred == false {
                 print("bye")
                 
@@ -102,21 +106,27 @@ class ViewController: UIViewController {
                 
                 isBlurred = true
                 
-            } else if isBlurred == true {
+            } else if returnTapRec.enabled == true {
                 print("bonjour")
-                if returnTapRec.enabled == true {
+                if isBlurred == true {
                     print("nihao")
                     textField.hidden = true
-                    
-                    for subview in blurEffectView.subviews {
+                    for subview in view.subviews {
                         print("hola")
                         if subview is UIVisualEffectView {
                             subview.removeFromSuperview()
-                                        }
-                                     }
-                                 }
-                 isBlurred = false
-                            }
+                            
+                            
+                            
                         }
                     }
+                    
+                    
                 }
+            }
+        }
+        
+        
+    }
+    
+}
